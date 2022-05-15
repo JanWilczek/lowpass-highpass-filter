@@ -17,9 +17,7 @@ LowpassHighpassFilterAudioProcessorEditor::LowpassHighpassFilterAudioProcessorEd
     constexpr auto WIDTH = 200;
 
     addAndMakeVisible(cutoffFrequencySlider);
-    cutoffFrequencySlider.setSkewFactor(0.8f);
     cutoffFrequencySlider.setSliderStyle(juce::Slider::SliderStyle::LinearVertical);
-    cutoffFrequencySlider.setRange({ 20, 20000 }, 0.1);
     cutoffFrequencyAttachment.reset(
         new juce::AudioProcessorValueTreeState::SliderAttachment(
             vts, "cutoff_frequency", cutoffFrequencySlider));
@@ -54,8 +52,8 @@ void LowpassHighpassFilterAudioProcessorEditor::paint (juce::Graphics& g)
     g.setFont (15.0f);
     //g.drawFittedText ("Hello World!", getLocalBounds(), juce::Justification::centred, 1);
     cutoffFrequencySlider.setBounds({ 15, 35, 100, 300 });
-    cutoffFrequencyLabel.setBounds({ cutoffFrequencySlider.getX() + 15, cutoffFrequencySlider.getY() - 30, 
-        cutoffFrequencySlider.getWidth(), 50 });
+    cutoffFrequencyLabel.setBounds({ cutoffFrequencySlider.getX() + 30, cutoffFrequencySlider.getY() - 30, 
+        200, 50 });
     highpassButton.setBounds({ cutoffFrequencySlider.getX(), 
         cutoffFrequencySlider.getY() + cutoffFrequencySlider.getHeight() + 15, 30, 50 });
     highpassButtonLabel.setBounds({ cutoffFrequencySlider.getX() + highpassButton.getWidth() + 15, highpassButton.getY(), 

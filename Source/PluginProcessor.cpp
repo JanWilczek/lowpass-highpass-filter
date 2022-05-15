@@ -21,8 +21,9 @@ LowpassHighpassFilterAudioProcessor::LowpassHighpassFilterAudioProcessor()
                      #endif
                        ),
       parameters(*this, nullptr, juce::Identifier("LowpassAndHighpassPlugin"),
-{
-                    std::make_unique<juce::AudioParameterFloat>("cutoff_frequency", "Cutoff Frequency", 20.f, 20000.f, 500.f),
+{std::make_unique<juce::AudioParameterFloat>(
+                      "cutoff_frequency", "Cutoff Frequency",
+                      juce::NormalisableRange{ 20.f, 20000.f, 0.1f, 0.2f, false }, 500.f),
                     std::make_unique<juce::AudioParameterBool>("highpass", "Highpass", false)
                 })
 #endif
