@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <FILTERGRAPH>
-  <FILTER uid="1" x="0.5" y="0.1">
+  <FILTER uid="1" x="0.5" y="0.1" DPIAware="0.0">
     <PLUGIN name="Audio Input" descriptiveName="" format="Internal" category="I/O devices"
-            manufacturer="JUCE" version="1.0" file="" uniqueId="246006c0"
-            isInstrument="0" fileTime="0" infoUpdateTime="0" numInputs="0"
-            numOutputs="2" isShell="0" uid="246006c0"/>
+            manufacturer="JUCE" version="1.0" file="" uid="246006c0" isInstrument="0"
+            fileTime="0" infoUpdateTime="0" numInputs="0" numOutputs="2"
+            isShell="0"/>
     <STATE>0.</STATE>
     <LAYOUT>
       <INPUTS>
@@ -16,11 +16,11 @@
       </OUTPUTS>
     </LAYOUT>
   </FILTER>
-  <FILTER uid="2" x="0.25" y="0.1">
+  <FILTER uid="2" x="0.25" y="0.1" DPIAware="0.0">
     <PLUGIN name="MIDI Input" descriptiveName="" format="Internal" category="I/O devices"
-            manufacturer="JUCE" version="1.0" file="" uniqueId="a9e4f9eb"
-            isInstrument="0" fileTime="0" infoUpdateTime="0" numInputs="0"
-            numOutputs="0" isShell="0" uid="a9e4f9eb"/>
+            manufacturer="JUCE" version="1.0" file="" uid="a9e4f9eb" isInstrument="0"
+            fileTime="0" infoUpdateTime="0" numInputs="0" numOutputs="0"
+            isShell="0"/>
     <STATE>0.</STATE>
     <LAYOUT>
       <INPUTS>
@@ -31,11 +31,11 @@
       </OUTPUTS>
     </LAYOUT>
   </FILTER>
-  <FILTER uid="3" x="0.5" y="0.9">
+  <FILTER uid="3" x="0.5" y="0.9" DPIAware="0.0">
     <PLUGIN name="Audio Output" descriptiveName="" format="Internal" category="I/O devices"
-            manufacturer="JUCE" version="1.0" file="" uniqueId="724248cb"
-            isInstrument="0" fileTime="0" infoUpdateTime="0" numInputs="2"
-            numOutputs="0" isShell="0" uid="724248cb"/>
+            manufacturer="JUCE" version="1.0" file="" uid="724248cb" isInstrument="0"
+            fileTime="0" infoUpdateTime="0" numInputs="2" numOutputs="0"
+            isShell="0"/>
     <STATE>0.</STATE>
     <LAYOUT>
       <INPUTS>
@@ -46,11 +46,11 @@
       </OUTPUTS>
     </LAYOUT>
   </FILTER>
-  <FILTER uid="4" x="0.25" y="0.9">
+  <FILTER uid="4" x="0.25" y="0.9" DPIAware="0.0">
     <PLUGIN name="MIDI Output" descriptiveName="" format="Internal" category="I/O devices"
-            manufacturer="JUCE" version="1.0" file="" uniqueId="9d5bbb00"
-            isInstrument="0" fileTime="0" infoUpdateTime="0" numInputs="0"
-            numOutputs="0" isShell="0" uid="9d5bbb00"/>
+            manufacturer="JUCE" version="1.0" file="" uid="9d5bbb00" isInstrument="0"
+            fileTime="0" infoUpdateTime="0" numInputs="0" numOutputs="0"
+            isShell="0"/>
     <STATE>0.</STATE>
     <LAYOUT>
       <INPUTS>
@@ -61,11 +61,12 @@
       </OUTPUTS>
     </LAYOUT>
   </FILTER>
-  <FILTER uid="5" x="0.5075" y="0.4536290322580645">
+  <FILTER uid="7" x="0.51375" y="0.3794117647058823" DPIAware="" uiLastX_Normal="78"
+          uiLastY_Normal="445" uiopen_Normal="0">
     <PLUGIN name="LowpassHighpassFilter" format="VST3" category="Fx|Filter"
-            manufacturer="yourcompany" version="1.0.0" file="C:\Projects\JUCEProjects\LowpassHighpassFilter\Builds\VisualStudio2019\x64\Debug\VST3\LowpassHighpassFilter.vst3"
-            uniqueId="f69ee82e" isInstrument="0" fileTime="180a77a4a35" infoUpdateTime="180a77e258e"
-            numInputs="2" numOutputs="2" isShell="0" uid="e95544c9"/>
+            manufacturer="yourcompany" version="1.0.0" file="D:\IT\JUCEprojects\LowpassHighpassFilter\Builds\VisualStudio2019\x64\Debug\VST3\LowpassHighpassFilter.vst3"
+            uid="e95544c9" isInstrument="0" fileTime="180c6cd0eeb" infoUpdateTime="180c6cf1c61"
+            numInputs="2" numOutputs="2" isShell="0"/>
     <STATE>191.VMjLgXK....O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9XCLt3hKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYjKAQjYPQSPWgUdMcjKAQjct3hdA4hKt3hKt3hKtnTUv.UQAslXuk0UXoWUFE0YQcEV77RRC8Vav8lak4Fc9vyKVMEUy.Ea0cVZtMEcgQWY9..</STATE>
     <LAYOUT>
       <INPUTS>
@@ -76,8 +77,8 @@
       </OUTPUTS>
     </LAYOUT>
   </FILTER>
-  <CONNECTION srcFilter="1" srcChannel="0" dstFilter="5" dstChannel="0"/>
-  <CONNECTION srcFilter="1" srcChannel="1" dstFilter="5" dstChannel="1"/>
-  <CONNECTION srcFilter="5" srcChannel="0" dstFilter="3" dstChannel="0"/>
-  <CONNECTION srcFilter="5" srcChannel="1" dstFilter="3" dstChannel="1"/>
+  <CONNECTION srcFilter="1" srcChannel="0" dstFilter="7" dstChannel="0"/>
+  <CONNECTION srcFilter="1" srcChannel="1" dstFilter="7" dstChannel="1"/>
+  <CONNECTION srcFilter="7" srcChannel="0" dstFilter="3" dstChannel="0"/>
+  <CONNECTION srcFilter="7" srcChannel="1" dstFilter="3" dstChannel="1"/>
 </FILTERGRAPH>

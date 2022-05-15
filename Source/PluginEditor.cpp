@@ -20,11 +20,17 @@ LowpassHighpassFilterAudioProcessorEditor::LowpassHighpassFilterAudioProcessorEd
     cutoffFrequencySlider.setSkewFactor(0.8f);
     cutoffFrequencySlider.setSliderStyle(juce::Slider::SliderStyle::LinearVertical);
     cutoffFrequencySlider.setRange({ 20, 20000 }, 0.1);
+    cutoffFrequencyAttachment.reset(
+        new juce::AudioProcessorValueTreeState::SliderAttachment(
+            vts, "cutoff_frequency", cutoffFrequencySlider));
 
     addAndMakeVisible(cutoffFrequencyLabel);
     cutoffFrequencyLabel.setText("Cutoff Frequency", juce::dontSendNotification);
 
     addAndMakeVisible(highpassButton);
+    highpassAttachment.reset(
+        new juce::AudioProcessorValueTreeState::ButtonAttachment(
+            vts, "highpass", highpassButton));
 
     addAndMakeVisible(highpassButtonLabel);
     highpassButtonLabel.setText("Highpass", juce::dontSendNotification);

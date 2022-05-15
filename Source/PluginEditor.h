@@ -29,8 +29,12 @@ private:
     // access the processor object that created it.
     LowpassHighpassFilterAudioProcessor& audioProcessor;
     juce::Slider cutoffFrequencySlider;
+    std::unique_ptr<juce::AudioProcessorValueTreeState::SliderAttachment>
+        cutoffFrequencyAttachment;
     juce::Label cutoffFrequencyLabel;
     juce::ToggleButton highpassButton;
+    std::unique_ptr<juce::AudioProcessorValueTreeState::ButtonAttachment>
+        highpassAttachment;
     juce::Label highpassButtonLabel;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (LowpassHighpassFilterAudioProcessorEditor)
