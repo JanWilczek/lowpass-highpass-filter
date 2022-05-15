@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio Version 16
+
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LowpassHighpassFilter - Standalone Plugin", "LowpassHighpassFilter_StandalonePlugin.vcxproj", "{6CB2B81A-2AF8-378B-DE5C-C5CA0AC84DCC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1CCE460C-3B16-62B6-6FF0-B17B05615D07} = {1CCE460C-3B16-62B6-6FF0-B17B05615D07}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LowpassHighpassFilter - VST3", "LowpassHighpassFilter_VST3.vcxproj", "{C37577FC-A8DF-3C56-E37D-75BDDD61DF82}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1CCE460C-3B16-62B6-6FF0-B17B05615D07} = {1CCE460C-3B16-62B6-6FF0-B17B05615D07}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LowpassHighpassFilter - Shared Code", "LowpassHighpassFilter_SharedCode.vcxproj", "{1CCE460C-3B16-62B6-6FF0-B17B05615D07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C37577FC-A8DF-3C56-E37D-75BDDD61DF82}.Debug|x64.ActiveCfg = Debug|x64
+		{C37577FC-A8DF-3C56-E37D-75BDDD61DF82}.Debug|x64.Build.0 = Debug|x64
+		{C37577FC-A8DF-3C56-E37D-75BDDD61DF82}.Release|x64.ActiveCfg = Release|x64
+		{C37577FC-A8DF-3C56-E37D-75BDDD61DF82}.Release|x64.Build.0 = Release|x64
+		{6CB2B81A-2AF8-378B-DE5C-C5CA0AC84DCC}.Debug|x64.ActiveCfg = Debug|x64
+		{6CB2B81A-2AF8-378B-DE5C-C5CA0AC84DCC}.Debug|x64.Build.0 = Debug|x64
+		{6CB2B81A-2AF8-378B-DE5C-C5CA0AC84DCC}.Release|x64.ActiveCfg = Release|x64
+		{6CB2B81A-2AF8-378B-DE5C-C5CA0AC84DCC}.Release|x64.Build.0 = Release|x64
+		{1CCE460C-3B16-62B6-6FF0-B17B05615D07}.Debug|x64.ActiveCfg = Debug|x64
+		{1CCE460C-3B16-62B6-6FF0-B17B05615D07}.Debug|x64.Build.0 = Debug|x64
+		{1CCE460C-3B16-62B6-6FF0-B17B05615D07}.Release|x64.ActiveCfg = Release|x64
+		{1CCE460C-3B16-62B6-6FF0-B17B05615D07}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
